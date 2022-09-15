@@ -4,22 +4,32 @@ body{
     align-items: center;
     text-align: center;
     color: white;
-    background-color: rgb(32, 32, 32);
+    background: linear-gradient(black, rgb(82, 82, 82));
+    height: 100vh;
+}
+main{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
     background-color: rgba(255,255,255,1);
     border-radius: 20px;
     padding: 10px;
-    width: 220px;
-    height: 350px;
+    width: 350px;
+    height: 550px;
+    border: 1px solid white;
 }
 #result{
-    padding: 5px;
-    width: 200px;
+    font-size: 1.2em;
+    text-align: end;
+    color: black;
+    height: 60px;
+    width: 280px;
     border: 1px solid black;
 }
 .squareDet{
@@ -33,21 +43,51 @@ table{
     justify-content: center;
 }
 button{
+    position: relative;
+    margin: 10px 4px;
     color: white;
-    width: 50px;
-    height: 50px;
-    background-color: rgb(32, 32, 32);
-    border: solid 1px black;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(230, 142, 11);
+    border: none;
     padding: 15px;
     text-align: center;
     font-size: 1.2em;
 }
 button:active{
-    background-color: blue;
+    background-color: rgb(255, 173, 96);
+}
+button::after{
+    content: "";
+    width: 70px;
+    height: 15px;
+    background-color: rgb(199, 77, 6);
+    position: absolute;
+    bottom: 0px;
+    z-index: 999;
+    left: 0px;
 }
 .Func{
     background-color: rgb(119, 119, 119);
 }
+.Func::after{
+    background-color: rgb(61, 61, 61) ;
+}
+#Func:active{
+    background-color: rgb(195, 194, 196);
+}
 #col2{
-    width: 105px;
+    width: 145px;
+}
+#col2::after{
+    width: 145px;
+}
+#shadow2D{
+    position: relative;
+    top: -20px;
+    z-index: -1;
+    background: linear-gradient(rgb(82, 82, 82),rgb(170, 170, 170));
+    width: 370px;
+    border-radius: 0px 0px 20px 20px;
+    height: 50px;
 }

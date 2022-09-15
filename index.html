@@ -10,44 +10,49 @@
 <body>
     <h1>calculadora Javascript</h1>
     <main>
+        <div class="topDetails">
+
+        </div>
         <div class="container">
-            <div class="squareDet"></div>
-            <div class="squareDet"></div>
-            <div class="squareDet"></div>
-            <p id="result">0101</p>
+
+            <p id="result"></p>
             <table>
                 <tr>
-                    <td><button class="Func" >AC</button></td>
-                    <td><button class="Func" >+/-</button></td>
-                    <td><button class="Func" >%</button></td>
-                    <td><button class="Func" >/</button></td>
-                </tr>
-                <tr>  
-                    <td><button> 7</button></td>
-                    <td><button >8</button></td>
-                    <td><button >9</button></td>
-                    <td><button class="btn Func" >X</button></td>
+                    <td><button onclick="buttonClicked('AC')" class="Func" >AC</button></td>
+                    <td><button onclick="buttonClicked()" class="Func" >+/-</button></td>
+                    <td><button onclick="buttonClicked()" class="Func" >%</button></td>
+                    <td><button onclick="buttonClicked()" class="Func" >/</button></td>
                 </tr>
                 <tr>
-                    <td><button>4</button></td>
-                    <td><button>5</button></td>
-                    <td><button>6</button></td>
-                    <td><button class="Func">-</button></td>
+                    <td><button onclick="buttonClicked(7)" >7</button></td>
+                    <td><button onclick="buttonClicked(8)" >8</button></td>
+                    <td><button onclick="buttonClicked(9)" >9</button></td>
+                    <td><button onclick="buttonClicked()" class="Func" >X</button></td>
                 </tr>
                 <tr>
-                    <td><button>1</button></td>
-                    <td><button>2</button></td>
-                    <td><button>3</button></td>
-                    <td><button class="Func">+</button></td>
+                    <td><button onclick="buttonClicked(4)">4</button></td>
+                    <td><button onclick="buttonClicked(5)">5</button></td>
+                    <td><button onclick="buttonClicked(6)">6</button></td>
+                    <td><button onclick="buttonClicked()" class="Func">-</button></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><button id="col2">0</button></td>
-                    <td><button>.</button></td>
-                    <td><button class="Func">=</button></td>
+                    <td><button onclick="buttonClicked(1)">1</button></td>
+                    <td><button onclick="buttonClicked(2)">2</button></td>
+                    <td><button onclick="buttonClicked(3)">3</button></td>
+                    <td><button onclick="buttonClicked()" class="Func">+</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button onclick="buttonClicked()" id="col2">0</button></td>
+                    <td><button onclick="buttonClicked()" >.</button></td>
+                    <td><button onclick="buttonClicked()" class="Func">=</button></td>
                 </tr>
             </table>
         </div>
+        <div id="shadow2D">
+                
+        </div>
 
     </main>
+    <script src="./script.js"></script>
 </body>
 </html>
